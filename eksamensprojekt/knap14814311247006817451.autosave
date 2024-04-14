@@ -1,0 +1,10 @@
+class knap{
+    int knapx = 100;
+    int knapy = 100;
+    int sizex = 100;
+    int sizey = 100;
+    
+    void display(knapx,knapy,sizex,sizey){
+        rect(knapx,knapy,sizex,sizey);
+    }
+}

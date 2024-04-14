@@ -1,0 +1,24 @@
+knap k1 = new knap(100,100,100,100, new fireInteractions());
+Table table;
+
+void setup() {
+   size(1000,1000);
+
+  table = loadTable("pokétypes.csv", "header");
+
+  println(table.getRowCount() + " total rows in table");
+
+  for (TableRow row : table.rows()) {
+
+    float type1t = row.getFloat(2);
+    
+    float type2t = row.getFloat(9);
+
+    println(type1t*type2t);
+  }
+}
+
+
+void draw() {
+    k1.display();
+}

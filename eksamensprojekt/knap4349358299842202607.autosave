@@ -1,0 +1,18 @@
+class knap{
+    int x;
+    int y;
+    int sizex;
+    int sizey;
+
+    knap(int xin,int yin,int sizexin, int sizeyin){
+        x=xin;
+        y=yin;
+        sizex=sizexin;
+        sizey=sizeyin;
+    }
+    void display(){
+        rect(x,y,sizex,sizey);
+    }
+    
+    
+}
